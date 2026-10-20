@@ -27,3 +27,5 @@ Thumbs.db
 # Convex
 convex.db
 *.convex
+
+.vercel

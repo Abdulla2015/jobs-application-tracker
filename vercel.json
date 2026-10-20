@@ -1,0 +1,29 @@
+{
+  "builds": [
+    {
+      "src": "job-application-tracker/package.json",
+      "use": "@vercel/next",
+      "config": {
+        "includeFiles": ["job-application-tracker/**"]
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "job-application-tracker/api/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "job-application-tracker/$1"
+    }
+  ],
+  "functions": {
+    "job-application-tracker/api/**/*.js": {
+      "maxDuration": 10
+    }
+  },
+  "env": {
+    "CONVEX_URL": "https://earnest-rat-517.convex.cloud"
+  }
+}
