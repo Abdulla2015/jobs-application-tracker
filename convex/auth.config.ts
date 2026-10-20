@@ -1,10 +1,5 @@
-import { ConvexAuthConfig } from "@convex-dev/auth/config";
+// For Better Auth with Convex, this file can remain empty
+// or contain your JWT provider configuration
+// See: https://docs.better-auth.com/providers/jwt
 
-export default {
-  providers: [
-    {
-      domain: "https://your-auth-provider.com",
-      applicationID: "convex",
-    },
-  ],
-} satisfies ConvexAuthConfig;
+export default {};

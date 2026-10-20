@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "WebSearch"
+      "WebSearch",
+      "Bash(npm run *)",
+      "Bash(npm install *)",
+      "Bash(npx convex *)"
     ],
     "defaultMode": "bypassPermissions"
   }
